@@ -7,7 +7,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Git checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Lint
         run: |
@@ -19,7 +19,7 @@ jobs:
     needs: lint
     steps:
       - name: Git checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: cache dependencies
         uses: actions/cache@v4
